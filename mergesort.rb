@@ -1,14 +1,9 @@
 def merge(l,r,a)
 	nl = l.length
 	nr = r.length
-
-	#left index
+	
 	i = 0
-
-	#right index
 	j = 0
-
-	#new array index
 	k = 0
 
 	while (i < nl && j < nr)
@@ -35,19 +30,12 @@ end
 
 def mergesort(a)
 	n = a.length
-
-	if (n < 2) #base case 
-		return
-	end
-
+	return if (n < 2) #base case 
 	mid = n / 2
-
 	l = a[0..mid-1]
 	r = a[mid..-1]
-
 	mergesort(l)
 	mergesort(r)
-
 	merge(l,r,a)
 end
 
