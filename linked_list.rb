@@ -196,13 +196,3 @@ list.to_s
 list.insert_at(2,"Lion")
 list.remove_at(3)
 list.to_s
-
-
-
-
-
-
-
-
-
-
